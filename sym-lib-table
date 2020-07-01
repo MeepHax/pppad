@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name keyboard_parts)(type Legacy)(uri ${KIPRJMOD}/keyboard_parts.lib)(options "")(descr ""))
+  (lib (name acheronSymbols)(type Legacy)(uri "C:/Users/Bryan/Desktop/pp pad v1/pppad/pppadpcbv1 attempt one/v1/micro b/AcheronLibrary-master/symbols/acheronSymbols.lib")(options "")(descr ""))
+)
