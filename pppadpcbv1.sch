@@ -923,16 +923,111 @@ F 3 "" H 7750 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5EFD33D1
 P 1750 5250
-F 0 "J?" H 1857 6117 50  0000 C CNN
+F 0 "J1" H 1857 6117 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1857 6026 50  0000 C CNN
-F 2 "" H 1900 5250 50  0001 C CNN
+F 2 "acheron_Connectors:TYPE-C-31-M-12" H 1900 5250 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1900 5250 50  0001 C CNN
 	1    1750 5250
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2350 5750
 NoConn ~ 2350 5850
+$Comp
+L Device:R_Small R2
+U 1 1 5EFE3087
+P 2500 4900
+F 0 "R2" V 2304 4900 50  0000 C CNN
+F 1 "5.1K" V 2395 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2500 4900 50  0001 C CNN
+F 3 "~" H 2500 4900 50  0001 C CNN
+	1    2500 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 4850 2350 4900
+Wire Wire Line
+	2350 4900 2400 4900
+Connection ~ 2350 4900
+Wire Wire Line
+	2350 4900 2350 4950
+$Comp
+L power:GND #PWR0101
+U 1 1 5EFE6BC8
+P 2600 4900
+F 0 "#PWR0101" H 2600 4650 50  0001 C CNN
+F 1 "GND" H 2605 4727 50  0000 C CNN
+F 2 "" H 2600 4900 50  0001 C CNN
+F 3 "" H 2600 4900 50  0001 C CNN
+	1    2600 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5EFE7856
+P 2500 5200
+F 0 "R3" V 2304 5200 50  0000 C CNN
+F 1 "220hms" V 2395 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2500 5200 50  0001 C CNN
+F 3 "~" H 2500 5200 50  0001 C CNN
+	1    2500 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5EFE8ADC
+P 2500 5400
+F 0 "R6" V 2600 5400 50  0000 C CNN
+F 1 "220hms" V 2700 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2500 5400 50  0001 C CNN
+F 3 "~" H 2500 5400 50  0001 C CNN
+	1    2500 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 5150 2350 5200
+Wire Wire Line
+	2350 5200 2400 5200
+Connection ~ 2350 5200
+Wire Wire Line
+	2350 5200 2350 5250
+Wire Wire Line
+	2350 5350 2350 5400
+Wire Wire Line
+	2350 5400 2400 5400
+Connection ~ 2350 5400
+Wire Wire Line
+	2350 5400 2350 5450
+Text GLabel 2600 5200 2    50   Output ~ 0
+D-
+Text GLabel 2600 5400 2    50   Output ~ 0
+D+
+Text GLabel 3650 4600 0    50   Input ~ 0
+D-
+Text GLabel 3650 4500 0    50   Input ~ 0
+D+
+$Comp
+L power:+5V #PWR0102
+U 1 1 5EFF0836
+P 2350 4650
+F 0 "#PWR0102" H 2350 4500 50  0001 C CNN
+F 1 "+5V" V 2365 4778 50  0000 L CNN
+F 2 "" H 2350 4650 50  0001 C CNN
+F 3 "" H 2350 4650 50  0001 C CNN
+	1    2350 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EFF222B
+P 1750 6150
+F 0 "#PWR0103" H 1750 5900 50  0001 C CNN
+F 1 "GND" H 1755 5977 50  0000 C CNN
+F 2 "" H 1750 6150 50  0001 C CNN
+F 3 "" H 1750 6150 50  0001 C CNN
+	1    1750 6150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
